@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {View, ScrollView} from 'react-native';
 import {useRoute} from '@react-navigation/native';
@@ -22,8 +14,8 @@ import GoBanner from '../../../components/molecules/GoBanner';
 import GreyBorder from '../../../components/atoms/GreyBorder';
 
 const Home = ({navigation}) => {
-  const route = useRoute();
-  console.log('nama route', route.name);
+  // const route = useRoute();
+  // console.log('nama route', route.name);
 
   return (
     <View style={{flex: 1}}>
