@@ -5,7 +5,7 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity} from 'react-native';
 
-const GoNews = () => {
+const GoNews = ({onPress}) => {
   return (
     <View style={{paddingTop: 16, paddingHorizontal: 16}}>
       <View style={{position: 'relative'}}>
@@ -59,7 +59,8 @@ const GoNews = () => {
           paddingVertical: 11,
           borderRadius: 10,
           alignSelf: 'flex-end',
-        }}>
+        }}
+        onPress={onPress}>
         <Text style={{color: 'white', fontSize: 13, fontWeight: 'bold'}}>
           READ
         </Text>
